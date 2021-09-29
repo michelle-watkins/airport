@@ -26,3 +26,11 @@ As an air traffic controller
 To ensure safety 
 I want to prevent landing when weather is stormy 
 ```
+## Domain Model
+
+| Objects | Messages |
+|---------|----------|
+| Airport | initialise |
+|  | land |
+|  | take_off |
+|  | weather_check |
