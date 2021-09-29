@@ -48,3 +48,5 @@ I want to prevent landing when weather is stormy
 * add logic so if there are 0 planes at the airport - planes cannot take off.
 * prevent takeoff when weather is stormy 
 * prevent landing when weather is stormy 
+* update draw.io flow chart
+* update README domain model
