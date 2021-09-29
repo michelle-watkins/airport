@@ -51,5 +51,4 @@ I want to prevent landing when weather is stormy
 ## To-do
 
 * prevent takeoff when weather is stormy 
-* prevent landing when weather is stormy 
-* update draw.io flow chart
+* prevent landing when weather is stormy
