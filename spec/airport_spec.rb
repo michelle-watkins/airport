@@ -34,8 +34,7 @@ describe Airport do
       expect(subject.land).to eq("Land the plane at the airport.")
     end
 
-    it 'should stop the plane from langing if at capacity' do
-      subject.land
+    it 'should stop the plane from landing if at capacity' do
       subject.land
       subject.land
       subject.land
@@ -51,7 +50,7 @@ describe Airport do
       expect(subject.flying?).to eq false
     end
 
-    it 'should return true if the plane has taken off' do
+    it 'should return true if the plane has taken off/flying' do
       subject.take_off
       expect(subject.flying?).to eq true
     end

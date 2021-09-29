@@ -39,8 +39,12 @@ I want to prevent landing when weather is stormy
 * instruct a plane to land at an airport
 * instruct a plane to take off from an airport and confirm that it is no longer in the airport
 * prevent landing when the airport is full 
+* default airport capacity that can be overridden as appropriate
+
+**Thoughts**
+>My `AIRPORT_CAPACITY` is a constant. Instead, maybe this could be an instance variable which is created within `initialize`. The `initialize` method could take an integer to overwrite the default capacity stored in `AIRPORT_CAPACITY`.    
 
 ## To-do
-* default airport capacity that can be overridden as appropriate
-> My AIRPORT_CAPACITY is a constant. Instead, maybe this could be an instance variable which is created within initialize. I could then make a method called airport_capacity which could take an integer and re-write the instance variable @current_capacity.
 * add logic so if there are 0 planes at the airport - planes cannot take off.
+* prevent takeoff when weather is stormy 
+* prevent landing when weather is stormy 
