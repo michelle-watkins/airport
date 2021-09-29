@@ -25,8 +25,13 @@ class Airport
   end  
 
   def take_off
-    @flying_status = true
-    @plane_count -= 1
-    "Plane has left the airport."
+    if @plane_count == 0
+      @flying_status = false
+      "There are no planes to take off."
+    else  
+      @flying_status = true
+      @plane_count -= 1
+      "Plane has left the airport."
+    end  
   end
 end

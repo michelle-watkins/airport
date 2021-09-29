@@ -51,6 +51,7 @@ describe Airport do
     end
 
     it 'should return true if the plane has taken off/flying' do
+      subject.land
       subject.take_off
       expect(subject.flying?).to eq true
     end
@@ -58,8 +59,13 @@ describe Airport do
 
   describe '#take_off' do
     it 'should return a flying status' do
+      subject.land
       subject.take_off
       expect(subject.flying?).to eq true
+    end
+
+    it "should return a take off message if there are no planes at the airport" do
+      expect(subject.take_off).to eq "There are no planes to take off."
     end
 
     it 'should subtract 1 from the current capacity' do
@@ -70,6 +76,7 @@ describe Airport do
     end
 
     it 'should confirm the plane is no longer at the airport.' do
+      subject.land
       expect(subject.take_off).to eq("Plane has left the airport.")
     end
   end
